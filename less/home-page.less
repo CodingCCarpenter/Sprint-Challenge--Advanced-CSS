@@ -11,6 +11,14 @@
     p {
       padding:0 15px;
     }
+    .header-img{
+      border-radius: 10px;
+      width: 100%;
+
+      @media(@mobile){
+        width: 100%;
+      }
+    }
   
   }
 
@@ -18,14 +26,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    
+    }
+  
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      
+
     }
-  }
+    
+    }
 
   .visit-planets {
     padding: 15px;
@@ -72,4 +85,10 @@
       }
     }
   }
-}// home
+  .launch .sky{
+    @media(@mobile) {
+      display: none;
+    }
+  }
+  
+// home
