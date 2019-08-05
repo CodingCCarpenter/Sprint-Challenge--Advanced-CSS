@@ -1,3 +1,7 @@
+.p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,7 +172,33 @@ p {
   background: #F6F6F6;
 }
 .nav .title {
-  font-size: 3.9rem;
+  font-size: 4rem;
+  margin: 2.5% 0 2.5% 0;
+}
+@media ("max-width: 500px") {
+  .nav .title {
+    font-size: 3.4rem;
+    padding: 2%;
+  }
+}
+.nav .main-nav {
+  display: flex;
+  justify-content: center;
+}
+@media ("max-width: 500px") {
+  .nav .main-nav {
+    justify-content: space-evenly;
+    margin: 0 1% 0 1%;
+  }
+}
+.nav .main-nav a {
+  margin: 0 1.5% 2% 1.5%;
+  /*mixin for .p() in mixins.less*/
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-decoration: none;
+  color: #23293B;
+  font-weight: bold;
 }
 footer {
   color: #22283B;

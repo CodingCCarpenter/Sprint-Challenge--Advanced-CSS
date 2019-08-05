@@ -5,9 +5,36 @@
     width: 97%;
     text-align: center;
     background: @nav-bg;
+    
 
     .title{
-        font-size: 3.9rem;
+        font-size: 4.0rem;
+        margin: 2.5% 0 2.5% 0;
+
+        @media(@mobile){
+            font-size: 3.4rem;
+            padding: 2%;
+
+        }
+    }
+    .main-nav{
+        display: flex;
+        justify-content: center;
+
+        @media(@mobile){
+            justify-content: space-evenly;
+            margin: 0 1% 0 1%;
+        }
+
+            a{
+                margin: 0 1.5% 2% 1.5%;
+                /*mixin for .p() in mixins.less*/
+                .p();
+                text-decoration: none;
+                color: @header-font-color;
+                font-weight: bold;
+                
+            }
     }
     
 
