@@ -1,9 +1,29 @@
 // Mixins Here
 //below defined mixin used in navigation.less line 34
-.p {
+.p() {
     font-size: 1.6rem;
     line-height: 1.4;
   }
-//below defined rule used in home-page.less line 25
+
+.displayFlex(@justify, @direction){
+  display: flex;
+  justify-content: @justify;
+  flex-direction: @direction;
+}
+
+
+.launch(){
+  @media @phone{
+    display: none;
+  }
+
+}
+
+.button(@tall, @wide){
+  height: @tall;
+  width: @wide;
+  
+}
+
 
 
