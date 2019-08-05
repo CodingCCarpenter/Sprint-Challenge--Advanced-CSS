@@ -160,6 +160,10 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
