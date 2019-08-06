@@ -1,1 +1,44 @@
 // Navigation code here
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: @nav-bg;
+    color: @nav-font;
+    border: .5px solid @sea-shell;
+    
+
+    .title{
+        font-size: 4.0rem;
+        margin: 2.5% 0 2.5% 0;
+
+        @media @phone{
+            font-size: 3.4rem;
+            padding: 2%;
+
+        }
+    }
+    .main-nav{
+        display: flex;
+        justify-content: center;
+
+        @media @phone{
+            justify-content: space-evenly;
+            margin: 0 1% 0 1%;
+        }
+
+            a{
+                margin: 0 1.5% 2% 1.5%;
+                /*mixin for .p() in mixins.less*/
+                .p();
+                text-decoration: none;
+                color: @header-font-color;
+                font-weight: bold;
+                
+            }
+    }
+    
+
+
+}
