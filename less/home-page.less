@@ -68,7 +68,7 @@
 
   .walk {
     border-top: 1.3px solid @main-border-color;
-    padding: 3% 6% 5% 6%;
+    padding: 5% 8% 5% 8%;
     .displayFlex(space-between, row);
         
     @media @phone {
@@ -100,11 +100,22 @@
   
       //STYLE BUTTON HERE
       .btn{
-        .button(10%, 100%);
+        .button(15%, 45%);
         background: @btn-bg-color;
         color: @sea-shell;
         line-height: 2rem;
         padding: 2%;
+        border-radius: 8%;
+        border: 1px solid @btn-bg-color;
+        
+        
+        @media @phone{
+          width: 100%
+        }
+      }
+      .btn:hover{
+          background-color: @sea-shell;
+          color: @btn-bg-color;
       } 
     }      
 
